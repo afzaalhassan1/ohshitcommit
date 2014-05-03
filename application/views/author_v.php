@@ -11,7 +11,7 @@
     <div class="col-md-3">
       <img src="http://placehold.it/250x250&text=PROFILE PIC">
       <br />
-      <strong>Name:</strong> My name<br />
+      <strong>Name:</strong> <?php echo $author_name; ?><br />
       <div class="row">
         <div class="col-md-6"> 
           FIRST
@@ -24,7 +24,7 @@
     <div class="col-md-9">
       <div class="row">
         <div class="col-md-6">
-          <div class="well well-sm">
+          <div class="well well-small">
             <h3>My repositories</h3>
           </div>
         </div>

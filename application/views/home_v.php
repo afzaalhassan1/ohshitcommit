@@ -18,7 +18,7 @@
             <td>I was making my first website using PHP</td>
             <td>5 rotten tomatoes</td>
             <td>
-              <a href="/author/afzaalH">Afzaal Hassan</a>
+              <a href="/author/sah">Syed Afzaal Hassan</a>
             </td>
           </tr>
           <tr>
