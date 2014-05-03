@@ -17,7 +17,7 @@
             <td>Making first website</td>
             <td>I was making my first website using PHP</td>
             <td>5 rotten tomatoes</td>
-            <td>Afzaal</td>
+            <td>Afzaal Hassan</td>
           </tr>
           <tr>
             <td>I have no f$#^in what i am doing!"</td>
