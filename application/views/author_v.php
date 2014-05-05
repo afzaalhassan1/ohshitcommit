@@ -5,6 +5,7 @@
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
         This is sooo right!
       </div>
+        <h3>h3. Bootstrap heading</h3>
     </div>
   </div>
   <div class="row">
@@ -24,7 +25,7 @@
     <div class="col-md-9">
       <div class="row">
         <div class="col-md-6">
-          <div class="well well-small">
+          <div class="well well-sm">
             <h3>My repositories</h3>
           </div>
         </div>
