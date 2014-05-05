@@ -5,7 +5,7 @@
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
         This is sooo right!
       </div>
-        <h3>h3. Bootstrap heading</h3>
+        <h3>My awesome picture!</h3>
     </div>
   </div>
   <div class="row">
