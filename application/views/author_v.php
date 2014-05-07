@@ -27,7 +27,9 @@
         <div class="col-md-6">
           <table class="table table-bordered">
             <div class="well well-sm">
-              <h3>My repositories</h3>
+              <p class="bg-primary">
+                <h3>My repositories</h3>
+              </p>
             </div>
           </table>
         </div>
