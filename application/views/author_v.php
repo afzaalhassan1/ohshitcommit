@@ -25,11 +25,13 @@
     <div class="col-md-9">
       <div class="row">
         <div class="col-md-6">
-          <table class="table table-bordered">;</table>
+          <table class="table table-bordered">
             <div class="well well-sm">
-              <p class="bg-primary">; </p>
+              <p class="bg-primary">
                 <h3>My repositories</h3>
+              </p>
             </div>
+          </table>
         </div>
         <div class="col-md-6">
           <div class="panel panel-default">
