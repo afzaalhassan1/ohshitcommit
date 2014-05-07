@@ -35,7 +35,7 @@
               Top dumb commit
             </div>
             <div class="panel-body">
-              "LOL, this shit dumb"
+              "LOL, this shit is funny"
             </div>
           </div>
         </div>
