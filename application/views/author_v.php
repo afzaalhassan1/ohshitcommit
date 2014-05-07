@@ -25,12 +25,15 @@
     <div class="col-md-9">
       <div class="row">
         <div class="col-md-6">
-          <div class="well well-sm">
-            <h3>My repositories</h3>
-          </div>
+          <table class="table table-bordered">
+            <div class="well well-sm">
+              <h3>My repositories</h3>
+            </div>
+          </table>
         </div>
         <div class="col-md-6">
           <div class="panel panel-default">
+
             <div class="panel-heading">
               Top dumb commit
             </div>
