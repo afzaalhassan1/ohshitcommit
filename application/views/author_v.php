@@ -56,10 +56,10 @@
       </span>
       <input type="text" class="form-control">
     </div><!-- /input-group -->
+    <div class="progress progress-striped active">
+      <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+        <span class="sr-only">45% Complete</span>
+      </div>
+    </div>
   </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
-<div class="progress progress-striped active">
-  <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-    <span class="sr-only">45% Complete</span>
-  </div>
-</div>
