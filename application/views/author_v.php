@@ -53,6 +53,7 @@
     <div class="input-group">
       <span class="input-group-btn">
         <button class="btn btn-default" type="button">Search!</button>
+        <input type="text" class="form-control" placeholder="Search for commits using keywords">
       </span>
       <input type="text" class="form-control">
     </div><!-- /input-group -->
