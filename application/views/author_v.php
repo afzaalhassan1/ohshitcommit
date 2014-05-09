@@ -35,12 +35,10 @@
         </div>
         <div class="col-md-6">
           <div class="panel panel-default">
-
-            <div class="panel-heading">
-              Top dumb commit
-            </div>
-            <div class="panel-body">
-              "LOL, this shit is funny"
+            <div class="list-group">
+              <a href="#" class="list-group-item active">Top Dumb commit</a>
+              <a href="#" class="list-group-item">LOL, This shit is funny</a>
+              <a href="#" class="list-group-item">Oh no you didnt</a>
             </div>
           </div>
         </div>
