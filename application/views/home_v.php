@@ -22,7 +22,7 @@
             </td>
           </tr>
           <tr>
-            <td>I have no f$#^in what i am doing!"</td>
+            <td>Maybe I know a little bit"</td>
             <td>Making first website</td>
             <td>I was making my first website using PHP</td>
             <td>5 rotten tomatoes</td>
