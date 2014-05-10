@@ -51,19 +51,6 @@
     <div class="input-group">
       <span class="input-group-btn">
         <button class="btn btn-default" type="button">Search!</button>
-        <div class="dropdown">
-          <button class="btn dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown">
-            Dropdown
-            <span class="caret"></span>
-          </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Search</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Don't search</a></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Search webpage only</a></li>
-              <li role="presentation" class="divider"></li>
-              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-            </ul>
-        </div>
       </span>
       <input type="text" class="form-control">
     </div><!-- /input-group -->
