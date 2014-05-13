@@ -52,17 +52,17 @@
           <div class = "row">
             <div class = "col-lg-9">
               <div class="panel panel-default">
-                <div class="panel-heading">Panel heading without title</div>
+                <div class="panel-heading"> Username table</div>
                   <div class="panel-body">
-                  Panel content
+                  "Username"
                 </div>
                 </div>
 
                   <div class="panel panel-default">
                     <div class="panel-heading">
-                      <h3 class="panel-title">Panel title</h3>
+                      <h3 class="panel-title">Comment List</h3>
                 </div>
                   <div class="panel-body">
-                Panel content
+                "Comments"
                 </div>
                 </div>
