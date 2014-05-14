@@ -67,5 +67,5 @@
                 </div>
                 </div>
                 <div class = "row">
-                <div class "col-lg-3">
+                <div class "col-lg-5">
                 <a href="#">New commits <span class="badge">2</span></a>
