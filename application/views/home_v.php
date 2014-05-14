@@ -66,3 +66,6 @@
                 "Comments"
                 </div>
                 </div>
+                <div class = "row">
+                <div class "col-lg-3">
+                <a href="#">New commits <span class="badge">2</span></a>
