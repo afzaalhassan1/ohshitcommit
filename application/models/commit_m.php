@@ -7,6 +7,8 @@ class Commit_m extends CI_Model {
   }
 
   function insert($data) {
+    $data['commit_date'] = date('Y-m-d H:i:s');
+    
     return $this->db->insert('commit', $data);
   }
 

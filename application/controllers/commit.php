@@ -13,4 +13,9 @@ class Commit extends CI_Controller {
     redirect("/");
 
   }
+
+  public function show()
+  {
+    $this->template->build('comment_v');
+  }
 }

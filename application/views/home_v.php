@@ -12,7 +12,7 @@
         <tbody>
           <?php foreach ($my_commits as $commit): ?>
             <tr>
-              <td><?php echo $commit['message']; ?></td>
+              <td><a href="/commit/show/<?php echo $commit['id']; ?>"><?php echo $commit['message']; ?></a> </td>
               <td><?php echo $commit['name']; ?></td>
               <td><?php echo $commit['commit_date']; ?></td>
             </tr>
@@ -33,16 +33,6 @@
               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
             </ul>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-9">
-      <div class="panel panel-default">
-        <div class="panel-heading"> Username table</div>
-        <div class="panel-body">
-          "Username"
         </div>
       </div>
     </div>
