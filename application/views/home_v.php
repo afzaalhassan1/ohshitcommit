@@ -5,29 +5,18 @@
         <thead>
           <tr>
             <th>Commit message</th>
-            <th>Project name</th>
-            <th>Project description</th>
-            <th>Ratings</th>
             <th>Author</th>
+            <th>Commit Date</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>I have no f$#^in idea what I am doing!"</td>
-            <td>Making first website</td>
-            <td>I was making my first website using PHP</td>
-            <td>5 rotten tomatoes</td>
-            <td>
-              <a href="/author/sah">Syed Afzaal Hassan</a>
-            </td>
-          </tr>
-          <tr>
-            <td>Maybe I know a little bit"</td>
-            <td>Making first website</td>
-            <td>I was making my first website using PHP</td>
-            <td>5 rotten tomatoes</td>
-            <td>Afzaal</td>
-          </tr>  
+          <?php foreach ($my_commits as $commit): ?>
+            <tr>
+              <td><?php echo $commit['message']; ?></td>
+              <td><?php echo $commit['name']; ?></td>
+              <td><?php echo $commit['commit_date']; ?></td>
+            </tr>
+          <?php endforeach; ?>
         </tbody>      
       </table>
       <div class="row">
@@ -59,13 +48,31 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-12">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">Comment List</h3>
+          <h3 class="panel-title">Enter a Commit</h3>
         </div>
         <div class="panel-body">
-          "Comments"
+          <form class="form-horizontal" role="form" action="/commit/new_commit" method="POST" >
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Commit Message</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="message" placeholder="Enter your message">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="name" placeholder="Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Submit</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
