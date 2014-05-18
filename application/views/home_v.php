@@ -10,11 +10,11 @@
           </tr>
         </thead>
         <tbody>
-          <?php foreach ($my_commits as $commit): ?>
+          <?php foreach ($my_commits as $single_commit): ?>
             <tr>
-              <td><a href="/commit/show/<?php echo $commit['id']; ?>"><?php echo $commit['message']; ?></a> </td>
-              <td><?php echo $commit['name']; ?></td>
-              <td><?php echo $commit['commit_date']; ?></td>
+              <td><a href="/commit/show/<?php echo $single_commit['id']; ?>"><?php echo $single_commit['message']; ?></a> </td>
+              <td><?php echo $single_commit['name']; ?></td>
+              <td><?php echo $single_commit['commit_date']; ?></td>
             </tr>
           <?php endforeach; ?>
         </tbody>      

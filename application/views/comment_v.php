@@ -6,7 +6,7 @@
         <h2><small> <?php echo $orig_commit['commit_date']; ?></small></h2>
         <div class="row">
           <div class="col-md-4">
-            <p>Name</p>
+            <p><?php echo $orig_commit['name']; ?></p>
           </div>
           <div class="col-md-4">
             <p>UserName</p>

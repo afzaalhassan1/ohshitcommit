@@ -8,7 +8,7 @@ class Commit extends CI_Controller {
 
     $form_data = $this->input->post();
 
-    $result = $this->Commit_m->insert($form_data);
+    $this->Commit_m->insert($form_data);
 
     redirect("/");
 
