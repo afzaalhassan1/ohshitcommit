@@ -47,7 +47,7 @@
           <h3 class="panel-title">Enter a Comment</h3>
         </div>
         <div class="panel-body">
-          <form class="form-horizontal" role="form" action="/commit/new_commit" method="POST" >
+          <form class="form-horizontal" role="form" action="/comment/add_comment" method="POST" >
             <div class="form-group">
               <label class="col-sm-2 control-label">Comment Message</label>
               <div class="col-sm-10">
@@ -62,7 +62,7 @@
             </div>
             <div class="form-group">
               <div class="col-sm-12 text-right">
-                <button type="button" class="btn btn-success">Yay!</button>
+                <button type="submit" class="btn btn-success">Yay!</button>
                 <button type="submit" class="btn btn-danger">Nay!</button>
                 <button type="submit" class="btn btn-info">Whatevs</button>
               </div>
