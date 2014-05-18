@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-12">
       <div class="jumbotron">
-        <h1>COMMIT MESSAGE</h1>
+        <h1><?php echo $orig_commit['message']; ?></h1>
         <h2><small>2014-01-01</small></h2>
         <div class="row">
           <div class="col-md-4">
@@ -25,7 +25,7 @@
           <tr>
             <th>Comment message</th>
             <th>Author</th>
-            <th>Funny, Yay or Nay</th>
+            <th>Funny, Yay, Nay or Whatevs</th>
             <th>Comment Date</th>
           </tr>
         </thead>
@@ -42,10 +42,38 @@
   </div>
   <div class="row">
     <div class="col-md-12">
-      Add new comments
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Enter a Comment</h3>
+        </div>
+        <div class="panel-body">
+          <form class="form-horizontal" role="form" action="/commit/new_commit" method="POST" >
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Comment Message</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="message" placeholder="Enter your message">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Name</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="name" placeholder="Name">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12 text-right">
+                <button type="button" class="btn btn-success">Yay!</button>
+                <button type="submit" class="btn btn-danger">Nay!</button>
+                <button type="submit" class="btn btn-info">Whatevs</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
 
 
 

@@ -12,6 +12,11 @@ class Commit_m extends CI_Model {
     return $this->db->insert('commit', $data);
   }
 
+  function get($commit_id) {
+    $this->db->where('id', $commit_id);
+    return $this->db->get('commit')->row_array();
+  }
+
   function get_all() {
     return $this->db->get('commit')->result_array();
   }
