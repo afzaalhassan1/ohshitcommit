@@ -3,7 +3,7 @@
     <div class="col-md-12">
       <div class="jumbotron">
         <h1><?php echo $orig_commit['message']; ?></h1>
-        <h2><small>2014-01-01</small></h2>
+        <h2><small> <?php echo $orig_commit['commit_date']; ?></small></h2>
         <div class="row">
           <div class="col-md-4">
             <p>Name</p>
