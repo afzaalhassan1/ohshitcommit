@@ -30,12 +30,15 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>This commit sucks, not funny at all</td>
-            <td>Afzaal</td>
-            <td>Nay!</td>
-            <td>2014-05-15</td>
-          </tr>
+          <?php foreach ($my_comment as $single_comment): ?>
+            <tr>
+              <td><a href="/commit/show/<?php echo $single_comment['id']; ?>"><?php echo $single_comment['message']; ?></a> </td>
+              <td><?php echo $single_comment['author']; ?></td>
+              <td><?php echo $single_comment['vote']; ?></td>
+              <td><?php echo $single_comment['comment']; ?></td>
+              <td><?php echo $single_comment['comment_date']; ?></td>
+            </tr>
+          <?php endforeach; ?>
         </tbody>      
       </table>
     </div>
@@ -48,16 +51,17 @@
         </div>
         <div class="panel-body">
           <form class="form-horizontal" role="form" action="/comment/add_comment" method="POST" >
+            <input type="hidden" name="commit_id" value="<?php echo $orig_commit['id']; ?>">
             <div class="form-group">
               <label class="col-sm-2 control-label">Comment Message</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" name="message" placeholder="Enter your message">
+                <input type="text" class="form-control" name="comment" placeholder="Enter your message">
               </div>
             </div>
             <div class="form-group">
               <label class="col-sm-2 control-label">Name</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" name="name" placeholder="Name">
+                <input type="text" class="form-control" name="author" placeholder="Name">
               </div>
             </div>
             <div class="form-group">
