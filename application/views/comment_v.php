@@ -30,9 +30,9 @@
           </tr>
         </thead>
         <tbody>
-          <?php foreach ($my_comment as $single_comment): ?>
+          <?php foreach ($comments as $single_comment): ?>
             <tr>
-              <td><a href="/commit/show/<?php echo $single_comment['id']; ?>"><?php echo $single_comment['message']; ?></a> </td>
+              <td><a href="/commit/show/<?php echo $single_comment['id']; ?>"><?php echo $single_comment['comment']; ?></a> </td>
               <td><?php echo $single_comment['author']; ?></td>
               <td><?php echo $single_comment['vote']; ?></td>
               <td><?php echo $single_comment['comment']; ?></td>
