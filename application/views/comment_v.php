@@ -66,7 +66,8 @@
             </div>
             <div class="form-group">
               <div class="col-sm-12 text-right">
-                <button type="submit" class="btn btn-success">Yay!</button>
+                <button type="submit" class="btn btn-success">Yay!</button> 
+                var_dump("It has died")
                 <button type="submit" class="btn btn-danger">Nay!</button>
                 <button type="submit" class="btn btn-info">Whatevs</button>
               </div>
