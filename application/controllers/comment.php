@@ -7,10 +7,8 @@ class Comment extends CI_Controller {
     $this->load->model('Comment_m');
     
     $form_data2 = $this->input->post();
-
     
     $this->Comment_m->insert($form_data2);
-    die("die with yay");
     redirect("/commit/show/" . $this->input->post('commit_id'));
   }
   

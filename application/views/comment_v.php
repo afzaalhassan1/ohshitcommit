@@ -66,9 +66,9 @@
             </div>
             <div class="form-group">
               <div class="col-sm-12 text-right">
-                <button type="submit" class="btn btn-success">Yay!</button> 
-                <button type="submit" class="btn btn-danger">Nay!</button>
-                <button type="submit" class="btn btn-info">Whatevs</button>
+                <button type="submit" class="btn btn-success" name = "vote" value = "1">Yay!</button> 
+                <button type="submit" class="btn btn-danger" name = "vote" value = "-1">Nay!</button>
+                <button type="submit" class="btn btn-info" name = "vote" value = "0">Whatevs</button>
               </div>
             </div>
           </form>
