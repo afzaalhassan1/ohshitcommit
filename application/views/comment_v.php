@@ -35,7 +35,6 @@
               <td><a href="/commit/show/<?php echo $single_comment['id']; ?>"><?php echo $single_comment['comment']; ?></a> </td>
               <td><?php echo $single_comment['author']; ?></td>
               <td><?php echo $single_comment['vote']; ?></td>
-              <td><?php echo $single_comment['comment']; ?></td>
               <td><?php echo $single_comment['comment_date']; ?></td>
             </tr>
           <?php endforeach; ?>
