@@ -20,7 +20,7 @@ class Commit extends CI_Controller {
     $this->load->model('Comment_m');
 
     $commit = $this->Commit_m->get($commit_id);
-    $comments = $this->Comment_m->get_all();
+    $comments = $this->Comment_m->get_all($commit_id);
     
 
     $this->template->set('orig_commit', $commit);

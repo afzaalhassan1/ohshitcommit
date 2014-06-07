@@ -19,7 +19,8 @@ class Comment_m extends CI_Model {
     return $this->db->get('comment')->row_array();
   }
 
-  function get_all() {
+  function get_all($commit_id) {
+    $this->db->where('commit_id', $commit_id);
     return $this->db->get('comment')->result_array();
   }
 
