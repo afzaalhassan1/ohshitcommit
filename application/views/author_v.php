@@ -1,61 +1,29 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <div class="alert alert-success alert-dismissable">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-        This is sooo right!
-      </div>
-      <h3>My awesome picture!</h3>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-3">
-      <img src="http://placehold.it/250x250&text=PROFILE PIC">
-      <br />
-      <strong>Name:</strong> <?php echo $author_name; ?><br />
-      <div class="row">
-        <div class="col-md-6"> 
-          FIRST
-        </div>
-        <div class="col-md-6"> 
-          SECOND
-        </div>
-      </div>
-    </div>
-    <div class="col-md-9">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="well well-sm">
-            <p class="bg-primary">
-              <h3>My repositories</h3>
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="panel panel-default">
-            <div class="list-group">
-              <a href="#" class="list-group-item active">Top Dumb commit</a>
-              <a href="#" class="list-group-item">LOL, This shit is funny</a>
-              <a href="#" class="list-group-item">Oh no you didnt</a>
-            </div>
-          </div>
-        </div>
+      <div class="jumbotron">
+        <h1><?php echo $orig_commit['name']; ?></h1>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-lg-6">
-      <div class="input-group">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button">Search!</button>
-        </span>
-        <input type="text" class="form-control">
-      </div><!-- /input-group -->
-      <div class="progress progress-striped active">
-        <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-          <span class="sr-only">50% Complete</span>
-        </div>
-      </div>
-    </div><!-- /.col-lg-6 -->
-  </div><!-- /.row -->
+    <div class="col-md-12">
+      <table class="table table-striped table-condensed table-hover">
+        <thead>
+          <tr>
+            <th>Comment Message</th>
+            <th>Commit Message</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php foreach ($orig_author as $one_author): ?>
+            <tr>
+              <td><a href="/commit/show/<?php echo $one_author['id']; ?>"><?php echo $one_author['comment']; ?></a> </td>
+              <td><?php echo $one_author['commit']; ?></td>
+            </tr>
+          <?php endforeach; ?>
+        </tbody>      
+      </table>
+    </div>
+  </div>
 </div>
