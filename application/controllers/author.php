@@ -11,4 +11,15 @@ class author extends CI_Controller {
     $this->author_m->insert($form_data3);
     redirect("/commit/show/" . $this->input->post('author_id'));
   }
+
+  public function display($author_id)
+  {
+    $this->load->model('author_m');
+    
+
+    $authors = $this->author_m->get($author_id);
+        
+
+    $this->template->set('orig_author', $authors);
+    $this->template->build('author_v');
 }

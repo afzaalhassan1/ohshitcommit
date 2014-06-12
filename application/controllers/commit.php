@@ -18,17 +18,16 @@ class Commit extends CI_Controller {
   {
     $this->load->model('Commit_m');
     $this->load->model('Comment_m');
-    $this->load->model('author_m');
+    
 
     $commit = $this->Commit_m->get($commit_id);
     $comments = $this->Comment_m->get_all($commit_id);
-    $authors = $this->author_m->get($author_id);
+    
     
 
     $this->template->set('orig_commit', $commit);
     $this->template->set('comments', $comments);
-    $this->template->set('orig_author', $authors);
     $this->template->build('comment_v');
-    $this->template->build('author_v');
+    
   }
 }
