@@ -7,21 +7,14 @@ class author_m extends CI_Model {
   }
 
   function insert($data3) {
-    $data3['comment_date'] = date('Y-m-d H:i:s');
-    
-    $this->db->insert('comment', $data2);
-
+    $this->db->insert('author', $data3);
     return;
   }
 
-  function get($comment_id) {
-    $this->db->where('id', $comment_id);
+  function get($author_id) {
+    $this->db->where('id', $author_id);
     return $this->db->get('comment')->row_array();
-  }
-
-  function get_all($commit_id) {
-    $this->db->where('commit_id', $commit_id);
-    return $this->db->get('comment')->result_array();
+    return $this->db->get('commit')->row_array();
   }
 
 }

@@ -18,7 +18,7 @@
         <tbody>
           <?php foreach ($orig_author as $one_author): ?>
             <tr>
-              <td><a href="/commit/show/<?php echo $one_author['id']; ?>"><?php echo $one_author['comment']; ?></a> </td>
+              <td><a href="/commit/show/<?php echo $one_author['author_id']; ?>"><?php echo $one_author['comment']; ?></a> </td>
               <td><?php echo $one_author['commit']; ?></td>
             </tr>
           <?php endforeach; ?>

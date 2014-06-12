@@ -22,7 +22,7 @@ class Commit extends CI_Controller {
 
     $commit = $this->Commit_m->get($commit_id);
     $comments = $this->Comment_m->get_all($commit_id);
-    $authors = $this->author_m->get_author($commit_id);
+    $authors = $this->author_m->get($author_id);
     
 
     $this->template->set('orig_commit', $commit);
