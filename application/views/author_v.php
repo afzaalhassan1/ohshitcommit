@@ -18,7 +18,7 @@
         <tbody>
           <?php foreach ($commits as $commit): ?>
             <tr>
-              <td><?php echo $commit['commit']; ?> </td>
+              <td><?php echo $commit['message']; ?> </td>
             </tr>
           <?php endforeach; ?>
           <?php foreach ($comments as $comment): ?>
