@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-12">
       <div class="jumbotron">
-        <h1><?php echo $orig_commit['name']; ?></h1>
+        <h1><?php echo $commits['name']; ?></h1>
       </div>
     </div>
   </div>

@@ -23,8 +23,8 @@ class Comment_m extends CI_Model {
     $this->db->where('commit_id', $commit_id);
     return $this->db->get('comment')->result_array();
   }
-  //function get_by_author($authorname) {
-  //  $this->db->where('author', $authorname);
-   // return $this->db->get('comment')->result_array();
+  function get_by_author($authorname) {
+   $this->db->where('author', $authorname);
+   return $this->db->get('comment')->result_array();
   }
 }
