@@ -20,8 +20,8 @@ class Author extends CI_Controller {
     $comments = $this->Comment_m->get_by_author($author_name);
 
     
-    $this->template->set('commit_author', $commits);
-    $this->template->set('comment_author', $comments);
+    $this->template->set('commits', $commits);
+    $this->template->set('comments', $comments);
     $this->template->build('author_v');
   }
 }

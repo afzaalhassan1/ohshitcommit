@@ -16,15 +16,15 @@
           </tr>
         </thead>
         <tbody>
-          <?php foreach ($orig_commit as $one_commit): ?>
+          <?php foreach ($commits as $commit): ?>
             <tr>
-              <td><?php echo $one_commit['name']; ?> </td>
+              <td><?php echo $commit['commit']; ?> </td>
             </tr>
           <?php endforeach; ?>
-          <?php foreach ($orig_comment as $one_comment); ?>
+          <?php foreach ($comments as $comment): ?>
             <tr>
-              <td><?php echo $one_comment['author'];?></td>
-            <tr>
+              <td><?php echo $comment['comment']; ?> </td>
+            </tr>
           <?php endforeach; ?>
         </tbody>      
       </table>
