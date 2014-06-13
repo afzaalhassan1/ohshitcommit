@@ -11,16 +11,20 @@
       <table class="table table-striped table-condensed table-hover">
         <thead>
           <tr>
-            <th>Comment Message</th>
             <th>Commit Message</th>
+            <th>Comment Message</th>
           </tr>
         </thead>
         <tbody>
-          <?php foreach ($orig_author as $one_author): ?>
+          <?php foreach ($orig_commit as $one_commit): ?>
             <tr>
-              <td><a href="/commit/show/<?php echo $one_author['author_id']; ?>"><?php echo $one_author['comment']; ?></a> </td>
-              <td><?php echo $one_author['commit']; ?></td>
+              <td><?php echo $one_commit['name']; ?> </td>
             </tr>
+          <?php endforeach; ?>
+          <?php foreach ($orig_comment as $one_comment); ?>
+            <tr>
+              <td><?php echo $one_comment['author'];?></td>
+            <tr>
           <?php endforeach; ?>
         </tbody>      
       </table>

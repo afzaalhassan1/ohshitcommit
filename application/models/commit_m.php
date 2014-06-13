@@ -23,4 +23,9 @@ class Commit_m extends CI_Model {
     return $this->db->get('commit')->result_array();
   }
 
+  function get_by_name($authorname) {
+    $this->db->where('name', $authorname);
+    return $this->db->get('commit')->result_array();
+  }
+
 }

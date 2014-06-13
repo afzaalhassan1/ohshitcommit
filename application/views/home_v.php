@@ -13,7 +13,7 @@
           <?php foreach ($my_commits as $single_commit): ?>
             <tr>
               <td><a href="/commit/show/<?php echo $single_commit['id']; ?>"><?php echo $single_commit['message']; ?></a> </td>
-              <td><a href="/commit/show/<?php echo $single_commit['name']; ?>"><?php echo $single_commit['name']; ?></a> </td>
+              <td><a href="/author/display/<?php echo $single_commit['name']; ?>"><?php echo $single_commit['name']; ?></a> </td>
               <td><?php echo $single_commit['commit_date']; ?></td>
             </tr>
           <?php endforeach; ?>
